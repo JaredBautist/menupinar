@@ -20,8 +20,8 @@ const robotoCondensed = Roboto_Condensed({
 })
 
 export const metadata: Metadata = {
-  title: 'Metro Pizza Gourmet - Carta Menú',
-  description: 'Menú digital de Metro Pizza Gourmet - Pizzas, Crepes, Lasagna, Pastas y más',
+  title: 'Metro Pizza Premium - Carta Menú',
+  description: 'Menú digital de Metro Pizza Premium - Pizzas, Crepes, Lasagna, Pastas y más',
   generator: 'v0.app',
   icons: {
     icon: [

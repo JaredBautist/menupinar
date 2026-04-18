@@ -225,9 +225,182 @@ export default function MenuPage() {
 
   return (
     <div className="min-h-screen bg-italian-marble font-roboto-condensed pb-24 md:pb-0">
-      {/* Metro Pizza Background Pattern */}
-      <div className="fixed inset-0 pointer-events-none">
+      {/* Italian Watermark Background */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute inset-0 bg-italian-stripes" />
+        {/* SVG Watermark Layer */}
+        <svg
+          className="absolute inset-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ opacity: 0.045 }}
+          aria-hidden="true"
+        >
+          {/* Torre Inclinada de Pisa — top left */}
+          <g transform="translate(30, 60) scale(0.9)" fill="#2d6a2d">
+            <rect x="20" y="220" width="90" height="10" rx="4"/>
+            <rect x="25" y="200" width="80" height="22" rx="3"/>
+            <rect x="28" y="180" width="74" height="22" rx="3"/>
+            <rect x="31" y="160" width="68" height="22" rx="3"/>
+            <rect x="34" y="140" width="62" height="22" rx="3"/>
+            <rect x="37" y="120" width="56" height="22" rx="3"/>
+            <rect x="40" y="100" width="50" height="22" rx="3"/>
+            <rect x="43" y="80"  width="44" height="22" rx="3"/>
+            <ellipse cx="65" cy="75" rx="22" ry="10"/>
+            <rect x="50" y="55" width="30" height="22" rx="3"/>
+            <ellipse cx="65" cy="52" rx="14" ry="7"/>
+            <rect x="57" y="35" width="16" height="20" rx="3"/>
+            <ellipse cx="65" cy="33" rx="8" ry="5"/>
+          </g>
+
+          {/* Pizza entera — top right */}
+          <g transform="translate(1050, 40) scale(1.1)" fill="#2d6a2d">
+            <circle cx="70" cy="70" r="68" fill="none" stroke="#2d6a2d" strokeWidth="6"/>
+            <circle cx="70" cy="70" r="55" fill="none" stroke="#2d6a2d" strokeWidth="3"/>
+            <line x1="70" y1="5"  x2="70" y2="135" stroke="#2d6a2d" strokeWidth="3"/>
+            <line x1="5"  y1="70" x2="135" y2="70" stroke="#2d6a2d" strokeWidth="3"/>
+            <line x1="22" y1="22" x2="118" y2="118" stroke="#2d6a2d" strokeWidth="2"/>
+            <line x1="118" y1="22" x2="22" y2="118" stroke="#2d6a2d" strokeWidth="2"/>
+            <circle cx="55" cy="50" r="6"/>
+            <circle cx="85" cy="55" r="5"/>
+            <circle cx="60" cy="85" r="5"/>
+            <circle cx="90" cy="80" r="6"/>
+            <circle cx="70" cy="65" r="4"/>
+          </g>
+
+          {/* Botella de vino — right side upper */}
+          <g transform="translate(1130, 220) scale(0.85)" fill="#2d6a2d">
+            <rect x="35" y="120" width="30" height="120" rx="10"/>
+            <rect x="30" y="210" width="40" height="15" rx="3"/>
+            <path d="M42 120 Q50 90 58 120" fill="#2d6a2d"/>
+            <rect x="44" y="60" width="12" height="65" rx="5"/>
+            <rect x="42" y="50" width="16" height="15" rx="4"/>
+            <rect x="46" y="35" width="8" height="20" rx="3"/>
+            <ellipse cx="50" cy="155" rx="12" ry="4"/>
+          </g>
+
+          {/* Copa de vino — left middle */}
+          <g transform="translate(-10, 380) scale(0.95)" fill="#2d6a2d">
+            <path d="M40 20 Q20 60 25 100 Q30 130 60 130 Q90 130 95 100 Q100 60 80 20Z" fill="none" stroke="#2d6a2d" strokeWidth="6"/>
+            <rect x="56" y="128" width="8" height="60" rx="3"/>
+            <rect x="35" y="185" width="50" height="8" rx="4"/>
+            <ellipse cx="60" cy="80" rx="20" ry="8" fill="#2d6a2d" fillOpacity="0.3"/>
+          </g>
+
+          {/* Rebanada de pizza — center-left */}
+          <g transform="translate(160, 480) scale(0.8)" fill="#2d6a2d">
+            <path d="M80 10 L10 160 L150 160 Z" fill="none" stroke="#2d6a2d" strokeWidth="6"/>
+            <path d="M40 160 Q80 120 120 160" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <circle cx="70" cy="110" r="8"/>
+            <circle cx="100" cy="100" r="7"/>
+            <circle cx="80" cy="130" r="6"/>
+            <circle cx="55" cy="125" r="6"/>
+          </g>
+
+          {/* Crepe enrollado — top center */}
+          <g transform="translate(480, 30) scale(0.9)" fill="#2d6a2d">
+            <ellipse cx="80" cy="40" rx="75" ry="35" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <ellipse cx="80" cy="40" rx="60" ry="25" fill="none" stroke="#2d6a2d" strokeWidth="3"/>
+            <ellipse cx="80" cy="40" rx="40" ry="15" fill="none" stroke="#2d6a2d" strokeWidth="2"/>
+            <path d="M20 55 Q80 80 140 55" fill="none" stroke="#2d6a2d" strokeWidth="4"/>
+            <path d="M30 65 Q80 90 130 65" fill="none" stroke="#2d6a2d" strokeWidth="3"/>
+          </g>
+
+          {/* Tenedor y cuchillo — bottom left */}
+          <g transform="translate(70, 700) scale(0.9)" fill="#2d6a2d">
+            <rect x="30" y="10" width="8" height="140" rx="4"/>
+            <rect x="26" y="10" width="4" height="50" rx="2"/>
+            <rect x="38" y="10" width="4" height="50" rx="2"/>
+            <rect x="22" y="10" width="4" height="50" rx="2"/>
+            <rect x="80" y="10" width="6" height="140" rx="3"/>
+            <path d="M80 10 Q95 30 86 55" fill="none" stroke="#2d6a2d" strokeWidth="6"/>
+          </g>
+
+          {/* Pasta/Espagueti — center */}
+          <g transform="translate(520, 600) scale(0.8)" fill="none" stroke="#2d6a2d" strokeWidth="4">
+            <path d="M0 50 Q50 10 100 50 Q150 90 200 50"/>
+            <path d="M0 70 Q50 30 100 70 Q150 110 200 70"/>
+            <path d="M0 90 Q50 50 100 90 Q150 130 200 90"/>
+            <circle cx="100" cy="70" r="40" fill="none" strokeWidth="5"/>
+          </g>
+
+          {/* Cangrejo/Mariscos — right bottom */}
+          <g transform="translate(1080, 580) scale(0.85)" fill="#2d6a2d">
+            <ellipse cx="70" cy="70" rx="45" ry="30"/>
+            <circle cx="55" cy="52" r="8" fill="#f5f5f0"/>
+            <circle cx="85" cy="52" r="8" fill="#f5f5f0"/>
+            <circle cx="55" cy="52" r="4"/>
+            <circle cx="85" cy="52" r="4"/>
+            <path d="M25 70 Q10 50 5 35" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <path d="M25 70 Q8 60 0 75"  fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <path d="M115 70 Q130 50 135 35" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <path d="M115 70 Q132 60 140 75" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <path d="M35 95 Q30 115 20 120" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <path d="M55 100 Q55 120 50 130" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <path d="M85 100 Q85 120 90 130" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <path d="M105 95 Q110 115 120 120" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+          </g>
+
+          {/* Olivo / Hoja italiana — left bottom */}
+          <g transform="translate(0, 900) scale(0.9)" fill="#2d6a2d">
+            <path d="M60 200 Q20 150 40 80 Q60 20 100 40 Q130 60 110 130 Q95 180 60 200Z"/>
+            <path d="M60 200 Q100 150 80 80 Q60 20 20 40 Q-10 60 10 130 Q25 180 60 200Z"/>
+            <line x1="60" y1="200" x2="60" y2="40" stroke="#f5f5f0" strokeWidth="4"/>
+          </g>
+
+          {/* Chef hat — top far right */}
+          <g transform="translate(1150, 500) scale(0.8)" fill="#2d6a2d">
+            <rect x="20" y="100" width="100" height="50" rx="5"/>
+            <ellipse cx="70" cy="100" rx="50" ry="20"/>
+            <path d="M30 100 Q30 40 70 30 Q110 40 110 100" fill="#2d6a2d"/>
+            <ellipse cx="70" cy="35" rx="25" ry="12"/>
+          </g>
+
+          {/* Segunda pizza rebanada — bottom center-right */}
+          <g transform="translate(850, 750) scale(0.75)" fill="#2d6a2d">
+            <path d="M80 10 L10 160 L150 160 Z" fill="none" stroke="#2d6a2d" strokeWidth="6"/>
+            <path d="M40 160 Q80 120 120 160" fill="none" stroke="#2d6a2d" strokeWidth="5"/>
+            <circle cx="65" cy="105" r="7"/>
+            <circle cx="95" cy="100" r="6"/>
+            <circle cx="75" cy="130" r="5"/>
+          </g>
+
+          {/* Coliseo romano — bottom right */}
+          <g transform="translate(940, 860) scale(0.7)" fill="#2d6a2d">
+            <rect x="0"   y="80"  width="200" height="100" rx="4"/>
+            <rect x="10"  y="50"  width="180" height="50"  rx="4"/>
+            <rect x="20"  y="20"  width="160" height="40"  rx="4"/>
+            <rect x="10"  y="180" width="10"  height="60"/>
+            <rect x="30"  y="180" width="10"  height="60"/>
+            <rect x="50"  y="180" width="10"  height="60"/>
+            <rect x="70"  y="180" width="10"  height="60"/>
+            <rect x="90"  y="180" width="10"  height="60"/>
+            <rect x="110" y="180" width="10"  height="60"/>
+            <rect x="130" y="180" width="10"  height="60"/>
+            <rect x="150" y="180" width="10"  height="60"/>
+            <rect x="170" y="180" width="10"  height="60"/>
+            <rect x="18"  y="90"  width="16"  height="30" rx="8" fill="#f5f5f0"/>
+            <rect x="48"  y="90"  width="16"  height="30" rx="8" fill="#f5f5f0"/>
+            <rect x="78"  y="90"  width="16"  height="30" rx="8" fill="#f5f5f0"/>
+            <rect x="108" y="90"  width="16"  height="30" rx="8" fill="#f5f5f0"/>
+            <rect x="138" y="90"  width="16"  height="30" rx="8" fill="#f5f5f0"/>
+            <rect x="168" y="90"  width="16"  height="30" rx="8" fill="#f5f5f0"/>
+            <rect x="28"  y="58"  width="14"  height="22" rx="7" fill="#f5f5f0"/>
+            <rect x="58"  y="58"  width="14"  height="22" rx="7" fill="#f5f5f0"/>
+            <rect x="88"  y="58"  width="14"  height="22" rx="7" fill="#f5f5f0"/>
+            <rect x="118" y="58"  width="14"  height="22" rx="7" fill="#f5f5f0"/>
+            <rect x="148" y="58"  width="14"  height="22" rx="7" fill="#f5f5f0"/>
+          </g>
+
+          {/* Estrella de cinco puntas / calidad — center floating */}
+          <g transform="translate(580, 300) scale(0.6)" fill="#2d6a2d">
+            <polygon points="60,5 74,40 112,40 82,62 95,97 60,75 25,97 38,62 8,40 46,40"/>
+          </g>
+
+          {/* Segunda estrella */}
+          <g transform="translate(330, 800) scale(0.5)" fill="#2d6a2d">
+            <polygon points="60,5 74,40 112,40 82,62 95,97 60,75 25,97 38,62 8,40 46,40"/>
+          </g>
+        </svg>
       </div>
 
       {/* Header - Sticky with blur */}
@@ -421,10 +594,50 @@ export default function MenuPage() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-white/50"
+            className="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-white/50"
             whileHover={{ boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.15)" }}
             transition={{ duration: 0.3 }}
           >
+            {/* Pizza watermark inside block */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{opacity:0.04}} aria-hidden="true">
+              {/* Torre de Pisa — bottom right */}
+              <g transform="translate(75%, 10%) scale(1.2)" fill="#1a5c1a">
+                <rect x="20" y="220" width="90" height="10" rx="4"/>
+                <rect x="25" y="200" width="80" height="22" rx="3"/>
+                <rect x="28" y="180" width="74" height="22" rx="3"/>
+                <rect x="31" y="160" width="68" height="22" rx="3"/>
+                <rect x="34" y="140" width="62" height="22" rx="3"/>
+                <rect x="37" y="120" width="56" height="22" rx="3"/>
+                <rect x="40" y="100" width="50" height="22" rx="3"/>
+                <rect x="43" y="80"  width="44" height="22" rx="3"/>
+                <ellipse cx="65" cy="75" rx="22" ry="10"/>
+                <rect x="50" y="55" width="30" height="22" rx="3"/>
+                <ellipse cx="65" cy="52" rx="14" ry="7"/>
+                <rect x="57" y="35" width="16" height="20" rx="3"/>
+                <ellipse cx="65" cy="33" rx="8" ry="5"/>
+              </g>
+              {/* Pizza entera — top left */}
+              <g transform="translate(20, 20) scale(1.3)" fill="#1a5c1a">
+                <circle cx="70" cy="70" r="68" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <circle cx="70" cy="70" r="52" fill="none" stroke="#1a5c1a" strokeWidth="3"/>
+                <line x1="70" y1="5"  x2="70" y2="135" stroke="#1a5c1a" strokeWidth="3"/>
+                <line x1="5"  y1="70" x2="135" y2="70" stroke="#1a5c1a" strokeWidth="3"/>
+                <line x1="22" y1="22" x2="118" y2="118" stroke="#1a5c1a" strokeWidth="2"/>
+                <line x1="118" y1="22" x2="22" y2="118" stroke="#1a5c1a" strokeWidth="2"/>
+                <circle cx="55" cy="50" r="6"/>
+                <circle cx="88" cy="55" r="5"/>
+                <circle cx="60" cy="88" r="5"/>
+                <circle cx="90" cy="80" r="6"/>
+              </g>
+              {/* Rebanada — center */}
+              <g transform="translate(45%, 55%) scale(0.9)" fill="#1a5c1a">
+                <path d="M80 10 L10 160 L150 160 Z" fill="none" stroke="#1a5c1a" strokeWidth="7"/>
+                <path d="M40 160 Q80 125 120 160" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <circle cx="68" cy="108" r="8"/>
+                <circle cx="98" cy="100" r="7"/>
+                <circle cx="78" cy="132" r="6"/>
+              </g>
+            </svg>
             {/* Section Header */}
             <div className="p-4 md:p-6 flex flex-wrap items-center gap-3 border-b border-[#228b22]/10">
               <motion.span
@@ -531,9 +744,36 @@ export default function MenuPage() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="bg-gradient-to-br from-[#228b22] to-[#1a6b1a] rounded-3xl shadow-xl overflow-hidden"
+            className="relative bg-gradient-to-br from-[#228b22] to-[#1a6b1a] rounded-3xl shadow-xl overflow-hidden"
             whileHover={{ boxShadow: "0 25px 50px -12px rgba(34, 139, 34, 0.3)" }}
           >
+            {/* Crepe / Lasagna watermark */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{opacity:0.07}} aria-hidden="true">
+              {/* Crepe enrollado — top right */}
+              <g transform="translate(68%, 5%) scale(1.1)" fill="white">
+                <ellipse cx="80" cy="40" rx="75" ry="35" fill="none" stroke="white" strokeWidth="5"/>
+                <ellipse cx="80" cy="40" rx="58" ry="25" fill="none" stroke="white" strokeWidth="3"/>
+                <ellipse cx="80" cy="40" rx="38" ry="15" fill="none" stroke="white" strokeWidth="2"/>
+                <path d="M20 55 Q80 80 140 55" fill="none" stroke="white" strokeWidth="4"/>
+                <path d="M30 65 Q80 90 130 65" fill="none" stroke="white" strokeWidth="3"/>
+              </g>
+              {/* Pasta — bottom left */}
+              <g transform="translate(5%, 60%)" fill="none" stroke="white" strokeWidth="4">
+                <path d="M0 50 Q50 10 100 50 Q150 90 200 50"/>
+                <path d="M0 70 Q50 30 100 70 Q150 110 200 70"/>
+                <path d="M0 90 Q50 50 100 90 Q150 130 200 90"/>
+                <circle cx="100" cy="70" r="42" fill="none" strokeWidth="5"/>
+              </g>
+              {/* Tenedor — center right */}
+              <g transform="translate(85%, 30%) scale(0.9)" fill="white">
+                <rect x="30" y="10" width="8" height="130" rx="4"/>
+                <rect x="26" y="10" width="4" height="48" rx="2"/>
+                <rect x="38" y="10" width="4" height="48" rx="2"/>
+                <rect x="22" y="10" width="4" height="48" rx="2"/>
+                <rect x="60" y="10" width="6" height="130" rx="3"/>
+                <path d="M60 10 Q75 30 66 52" fill="none" stroke="white" strokeWidth="6"/>
+              </g>
+            </svg>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-6">
               {/* Crepes */}
               <motion.div
@@ -642,14 +882,7 @@ export default function MenuPage() {
                 </div>
               </motion.div>
 
-              {/* Decorative */}
-              <motion.div
-                className="hidden md:flex items-center justify-center"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-              >
-                <div className="text-[10rem] opacity-10">🍕</div>
-              </motion.div>
+
             </div>
           </motion.div>
         </motion.section>
@@ -664,9 +897,37 @@ export default function MenuPage() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-white/50 p-4 md:p-6"
+            className="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-white/50 p-4 md:p-6"
             whileHover={{ boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.15)" }}
           >
+            {/* Bebidas watermark */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{opacity:0.045}} aria-hidden="true">
+              {/* Botella de vino — right */}
+              <g transform="translate(75%, 5%) scale(1.1)" fill="#1a5c1a">
+                <rect x="35" y="120" width="30" height="130" rx="12"/>
+                <rect x="30" y="215" width="40" height="15" rx="3"/>
+                <path d="M42 120 Q50 88 58 120" fill="#1a5c1a"/>
+                <rect x="44" y="60" width="12" height="65" rx="5"/>
+                <rect x="42" y="50" width="16" height="14" rx="4"/>
+                <rect x="46" y="33" width="8" height="22" rx="3"/>
+                <ellipse cx="50" cy="158" rx="13" ry="5"/>
+              </g>
+              {/* Copa de vino — left */}
+              <g transform="translate(5%, 10%) scale(1.1)" fill="#1a5c1a">
+                <path d="M40 20 Q18 65 24 105 Q30 135 65 135 Q100 135 106 105 Q112 65 90 20Z" fill="none" stroke="#1a5c1a" strokeWidth="6"/>
+                <rect x="60" y="133" width="10" height="65" rx="4"/>
+                <rect x="38" y="195" width="54" height="9" rx="4"/>
+                <ellipse cx="65" cy="82" rx="22" ry="9" fill="#1a5c1a" fillOpacity="0.4"/>
+              </g>
+              {/* Cerveza/lata — center */}
+              <g transform="translate(42%, 15%) scale(0.9)" fill="#1a5c1a">
+                <rect x="30" y="40" width="60" height="110" rx="12"/>
+                <ellipse cx="60" cy="40" rx="30" ry="10"/>
+                <ellipse cx="60" cy="150" rx="30" ry="10"/>
+                <rect x="48" y="10" width="24" height="32" rx="6"/>
+                <circle cx="60" cy="12" r="6"/>
+              </g>
+            </svg>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Bebidas */}
               <motion.div
@@ -765,9 +1026,23 @@ export default function MenuPage() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="bg-gradient-to-br from-[#228b22] to-[#1a6b1a] rounded-3xl shadow-xl overflow-hidden p-4 md:p-6"
+            className="relative bg-gradient-to-br from-[#228b22] to-[#1a6b1a] rounded-3xl shadow-xl overflow-hidden p-4 md:p-6"
             whileHover={{ boxShadow: "0 25px 50px -12px rgba(34, 139, 34, 0.3)" }}
           >
+            {/* Panzerotti/Adicionales watermark */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{opacity:0.07}} aria-hidden="true">
+              {/* Estrella de cinco puntas — top left */}
+              <g transform="translate(10%, 15%) scale(0.8)" fill="white">
+                <polygon points="60,5 74,40 112,40 82,62 95,97 60,75 25,97 38,62 8,40 46,40"/>
+              </g>
+              {/* Vaso de Frappe/Jugo — bottom right */}
+              <g transform="translate(75%, 50%) scale(1.1)" fill="none" stroke="white" strokeWidth="4">
+                <path d="M30 140 L20 40 L80 40 L70 140 Z"/>
+                <path d="M10 40 Q50 60 90 40"/>
+                <line x1="50" y1="140" x2="50" y2="10" strokeWidth="6"/>
+                <line x1="50" y1="10" x2="65" y2="0" strokeWidth="6"/>
+              </g>
+            </svg>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Panzerotti */}
               <motion.div
@@ -891,9 +1166,35 @@ export default function MenuPage() {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="bg-gradient-to-br from-[#f5c800] to-[#e6b800] rounded-3xl shadow-xl overflow-hidden p-4 md:p-6"
+            className="relative bg-gradient-to-br from-[#f5c800] to-[#e6b800] rounded-3xl shadow-xl overflow-hidden p-4 md:p-6"
             whileHover={{ boxShadow: "0 25px 50px -12px rgba(245, 200, 0, 0.3)" }}
           >
+            {/* Especiales watermark */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{opacity:0.06}} aria-hidden="true">
+              {/* Cangrejo/Mariscos — bottom left */}
+              <g transform="translate(5%, 60%) scale(1.2)" fill="#1a5c1a">
+                <ellipse cx="70" cy="70" rx="45" ry="30"/>
+                <circle cx="55" cy="52" r="8" fill="transparent"/>
+                <circle cx="85" cy="52" r="8" fill="transparent"/>
+                <circle cx="55" cy="52" r="4"/>
+                <circle cx="85" cy="52" r="4"/>
+                <path d="M25 70 Q10 50 5 35" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <path d="M25 70 Q8 60 0 75"  fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <path d="M115 70 Q130 50 135 35" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <path d="M115 70 Q132 60 140 75" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <path d="M35 95 Q30 115 20 120" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <path d="M55 100 Q55 120 50 130" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <path d="M85 100 Q85 120 90 130" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+                <path d="M105 95 Q110 115 120 120" fill="none" stroke="#1a5c1a" strokeWidth="5"/>
+              </g>
+              {/* Chef Hat — top right */}
+              <g transform="translate(75%, 10%) scale(1.1)" fill="#1a5c1a">
+                <rect x="20" y="100" width="100" height="50" rx="5"/>
+                <ellipse cx="70" cy="100" rx="50" ry="20"/>
+                <path d="M30 100 Q30 40 70 30 Q110 40 110 100" fill="#1a5c1a"/>
+                <ellipse cx="70" cy="35" rx="25" ry="12"/>
+              </g>
+            </svg>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Cazuela de Mariscos */}
               <motion.div
