@@ -19,51 +19,56 @@ import {
 
 // Data
 const pizzas = [
-  { name: "GENOVESA", ing: "pollo · champiñón", p: [31, 41, 55, 62, 61, 94], img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&h=200&fit=crop" },
-  { name: "SICILIANA", ing: "pollo · jamón", p: [31, 41, 55, 62, 61, 94], img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop" },
-  { name: "VELEÑA", ing: "bocadillo y queso", p: [31, 41, 55, 62, 61, 94], img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=200&h=200&fit=crop" },
-  { name: "HAWAIANA", ing: "jamón · piña", p: [32, 43, 56, 66, 64, 97], img: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=200&h=200&fit=crop" },
-  { name: "HAWAIANA ESPECIAL", ing: "jamón · piña · champiñón · cereza", p: [36, 47, 59, 69, 67, 101], img: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=200&h=200&fit=crop" },
-  { name: "TROPICAL", ing: "jamón · piña · ciruelas · cereza", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=200&h=200&fit=crop" },
-  { name: "BOLOGNA", ing: "carne · jamón · champiñones", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200&h=200&fit=crop" },
-  { name: "MIEL MOSTAZA", ing: "pollo · tocineta · miel mostaza", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=200&h=200&fit=crop" },
-  { name: "RANCHERA", ing: "pollo · tocineta · salchicha ranchera", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=200&h=200&fit=crop" },
-  { name: "NAPOLITANA", ing: "tomate · anchoas · orégano", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=200&h=200&fit=crop" },
-  { name: "CLÁSICA", ing: "jamón · pollo · champiñones · tocineta", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=200&h=200&fit=crop" },
-  { name: "MEXICANA", ing: "carne · pimentón · doritos · tomates · cilantro · ají", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=200&h=200&fit=crop" },
-  { name: "VEGETARIANA", ing: "champiñones · cebolla · tomate · pimentón · aceitunas", p: [34, 46, 57, 67, 65, 100], img: "https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=200&h=200&fit=crop" },
-  { name: "MEDITERRÁNEA", ing: "pollo · champiñones · camarones", p: [43, 51, 69, 72, 80, 122], img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&h=200&fit=crop" },
-  { name: "ROMANA", ing: "jamón · cabano · pollo · tocineta · pimentón · anchoas", p: [43, 51, 69, 72, 80, 122], img: "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=200&h=200&fit=crop" },
-  { name: "CAMPESINA", ing: "pollo · jamón · tocineta · maíz", p: [43, 51, 69, 69, 80, 122], img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=200&h=200&fit=crop" },
-  { name: "SALAMI", ing: "salami", p: [43, 51, 69, 76, 80, 122], img: "https://images.unsplash.com/photo-1571066811602-716837d681de?w=200&h=200&fit=crop" },
-  { name: "PEPERONI", ing: "peperoni", p: [43, 51, 69, 76, 80, 122], img: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200&h=200&fit=crop" },
-  { name: "VALENCIANA", ing: "jamón · pollo · maíz · camarón · piña", p: [43, 51, 69, 85, 80, 122], img: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=200&h=200&fit=crop" },
-  { name: "DE LA CASA", ing: "jamón · pollo · champiñones · tocineta · camarones · cebolla · pimentón", p: [43, 51, 69, 85, 80, 122], img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop" },
-  { name: "CARNES", ing: "jamón · tocineta · peperoni · salami · cabano", p: [43, 51, 69, 85, 80, 122], img: "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=200&h=200&fit=crop" },
+  { name: "GENOVESA", ing: "pollo · champiñón", p: [34, 44, 57, 64, 64, 96], img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&h=200&fit=crop" },
+  { name: "SICILIANA", ing: "pollo · jamón", p: [34, 44, 57, 64, 64, 96], img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop" },
+  { name: "VELEÑA", ing: "bocadillo y queso", p: [34, 44, 57, 64, 64, 96], img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=200&h=200&fit=crop" },
+  { name: "HAWAIANA", ing: "jamón · piña", p: [36, 45, 59, 66, 66, 102], img: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=200&h=200&fit=crop" },
+  { name: "HAWAIANA ESPECIAL", ing: "jamón · piña · champiñón · tocineta", p: [39, 49, 62, 70, 69, 106], img: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=200&h=200&fit=crop" },
+  { name: "TROPICAL", ing: "jamón · piña · ciruelas · cereza", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=200&h=200&fit=crop" },
+  { name: "BOLOGNA", ing: "carne · jamón · champiñones", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200&h=200&fit=crop" },
+  { name: "MIEL MOSTAZA", ing: "pollo · tocineta · miel mostaza", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=200&h=200&fit=crop" },
+  { name: "RANCHERA", ing: "pollo · tocineta · salchicha ranchera", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=200&h=200&fit=crop" },
+  { name: "NAPOLITANA", ing: "tomate · anchoas · orégano", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=200&h=200&fit=crop" },
+  { name: "CLÁSICA", ing: "jamón · pollo · champiñones · tocineta", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=200&h=200&fit=crop" },
+  { name: "MEXICANA", ing: "carne · pimentón · doritos · tomates · cilantro · ají (op)", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=200&h=200&fit=crop" },
+  { name: "VEGETARIANA", ing: "champiñones · cebolla · tomate · pimentón · aceitunas", p: [38, 48, 61, 69, 67, 103], img: "https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=200&h=200&fit=crop" },
+  { name: "MEDITERRÁNEA", ing: "pollo · champiñones · camarones", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&h=200&fit=crop" },
+  { name: "ROMANA", ing: "jamón · cabano · pollo · tocineta · pimentón · anchoas", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=200&h=200&fit=crop" },
+  { name: "CAMPESINA", ing: "pollo · jamón · tocineta · maíz", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=200&h=200&fit=crop" },
+  { name: "SALAMI", ing: "salami", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1571066811602-716837d681de?w=200&h=200&fit=crop" },
+  { name: "PEPERONI", ing: "peperoni", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200&h=200&fit=crop" },
+  { name: "VALENCIANA", ing: "jamón · pollo · maíz · camarón · piña", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=200&h=200&fit=crop" },
+  { name: "DE LA CASA", ing: "jamón · pollo · champiñones · tocineta · camarones · cebolla · pimentón", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop" },
+  { name: "CARNES", ing: "jamón · tocineta · peperoni · salami · cabano", p: [48, 53, 71, 87, 83, 125], img: "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=200&h=200&fit=crop" },
+  { name: "FRUTOS DEL MAR", ing: "atún · camarón · pulpo · calamar · anchoas", p: [51, 0, 0, 0, 0, 0], img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=200&h=200&fit=crop" },
+  { name: "4 QUESOS", ing: "mozzarella · amarillo · paisa · azul", p: [51, 0, 0, 0, 0, 0], img: "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=200&h=200&fit=crop" },
+  { name: "ESPECIAL PREMIUM", ing: "mozzarella · jamón serrano · tomate cherry · aceituna negra · albahaca", p: [51, 0, 0, 0, 0, 0], img: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=200&h=200&fit=crop" },
 ]
 
 const crepes = [
-  { name: "CREPE GENOVESA", ing: "pollo · champiñón", price: 29000, img: "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=200&h=200&fit=crop" },
-  { name: "CREPE SICILIANO", ing: "pollo · jamón", price: 29000, img: "https://images.unsplash.com/photo-1584776296944-ab6fb57b0ee8?w=200&h=200&fit=crop" },
-  { name: "CREPE HAWAIANO", ing: "jamón · piña · queso", price: 29000, img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=200&h=200&fit=crop" },
-  { name: "CREPE VEGETARIANO", ing: "champiñón · apio españa · cebollín · maíz · pimentón", price: 29000, img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&h=200&fit=crop" },
-  { name: "CREPE RANCHERO", ing: "pollo · salchicha ranchera · tocineta", price: 32000, img: "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=200&h=200&fit=crop" },
-  { name: "CREPE RANCHERO DE LA CASA", ing: "carne molida · champiñón · salchicha · queso", price: 32000, img: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=200&h=200&fit=crop" },
-  { name: "CREPE MARCO POLO ESPECIAL", ing: "pollo · champiñón · camarón", price: 37000, img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200&h=200&fit=crop" },
-  { name: "CREPE MARINERO", ing: "pulpo · calamar · camarón", price: 43000, img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200&h=200&fit=crop" },
+  { name: "CREPE GENOVESA", ing: "pollo · champiñón", price: 32000, img: "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=200&h=200&fit=crop" },
+  { name: "CREPE SICILIANO", ing: "pollo · jamón", price: 32000, img: "https://images.unsplash.com/photo-1584776296944-ab6fb57b0ee8?w=200&h=200&fit=crop" },
+  { name: "CREPE HAWAIANO", ing: "jamón · piña · queso", price: 32000, img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=200&h=200&fit=crop" },
+  { name: "CREPE VEGETARIANO", ing: "champiñón · apio españa · cebollín · maíz · pimentón", price: 32000, img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&h=200&fit=crop" },
+  { name: "CREPE RANCHERO", ing: "jamón · pollo · salchicha ranchera · tocineta", price: 37000, img: "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=200&h=200&fit=crop" },
+  { name: "CREPE RANCHERO DE LA CASA", ing: "carne molida · champiñón · salchicha · queso", price: 39000, img: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=200&h=200&fit=crop" },
+  { name: "CREPE MARCO POLO ESPECIAL", ing: "pollo · champiñón · camarón", price: 40000, img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200&h=200&fit=crop" },
+  { name: "CREPE MARINERO", ing: "pulpo · calamar · camarón", price: 47000, img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200&h=200&fit=crop" },
 ]
 
 const lasagnas = [
-  { name: "LASAGNA BOLOGNA", ing: "carne · salsa napolitana", price: 30000, img: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=200&h=200&fit=crop" },
+  { name: "LASAGNA BOLOGNA", ing: "carne · salsa napolitana", price: 32000, img: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=200&h=200&fit=crop" },
   { name: "LASAGNA GENOVESA", ing: "pollo · champiñón", price: 32000, img: "https://images.unsplash.com/photo-1619895092538-128341789043?w=200&h=200&fit=crop" },
   { name: "LASAGNA MIXTA", ing: "pollo · jamón · carne · champiñón", price: 34000, img: "https://images.unsplash.com/photo-1560684352-8497838a2229?w=200&h=200&fit=crop" },
   { name: "LASAGNA ESPECIAL", ing: "jamón · camarón · pollo · champiñón", price: 40000, img: "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?w=200&h=200&fit=crop" },
 ]
 
 const pastas = [
-  { name: "PASTAS A LA BOLOGNA", ing: "carne molida con salsa napolitana", price: 31000, img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&h=200&fit=crop" },
-  { name: "PASTAS A LA CARBONARA", ing: "tocineta · salsa bechamel", price: 31000, img: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=200&h=200&fit=crop" },
-  { name: "PASTAS A LA MARINERA", ing: "camarón · calamar · pulpo · mejillón · salsa bechamel de mariscos", price: 44000, img: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&h=200&fit=crop" },
+  { name: "PASTAS NAPOLITANA O BECHAMEL", ing: "salsa napolitana o con salsa bechamel", price: 32000, img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&h=200&fit=crop" },
+  { name: "PASTAS AL BURRO", ing: "mantequilla · queso", price: 32000, img: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=200&h=200&fit=crop" },
+  { name: "PASTAS A LA BOLOGNA", ing: "carne molida con salsa napolitana", price: 38000, img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&h=200&fit=crop" },
+  { name: "PASTAS A LA CARBONARA", ing: "tocineta · salsa bechamel", price: 38000, img: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=200&h=200&fit=crop" },
+  { name: "PASTAS A LA MARINERA", ing: "camarón · calamar · pulpo · mejillón · salsa bechamel de mariscos", price: 46000, img: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&h=200&fit=crop" },
 ]
 
 const panzerotti = [
@@ -76,35 +81,35 @@ const panzerotti = [
 
 const adicionales = [
   { name: "CAMARÓN", price: 8000 },
-  { name: "QUESO", price: 8000 },
   { name: "MAÍZ", price: 6000 },
-  { name: "JAMÓN", price: 6000 },
-  { name: "POLLO", price: 6000 },
-  { name: "CHAMPIÑÓN", price: 6000 },
   { name: "PIÑA", price: 6000 },
-  { name: "ANCHOAS", price: 10000 },
+  { name: "SALCHICHA", price: 6000 },
+  { name: "CHAMPIÑÓN", price: 6000 },
+  { name: "QUESO", price: 8000 },
+  { name: "PORCIÓN DE PAPAS A LA FRANCESA", price: 6000 },
+  { name: "PORCIÓN DE ANCHOAS", price: 10000 },
 ]
 
 const bebidas = [
   { name: "AGUA", price: 3000 },
   { name: "MR. TEA", price: 4500 },
-  { name: "GASEOSA P4", price: 5000 },
-  { name: "GASEOSA 1.5", price: 8000 },
-  { name: "MR.TA LITRO", price: 4000 },
-  { name: "GASEOSA 2.5", price: 10000 },
+  { name: "GASEOSA PET 400", price: 4500 },
+  { name: "GASEOSA LITRAZO", price: 9000 },
   { name: "SODA", price: 4000 },
+  { name: "LIMONADA DE ROSAS", price: 17000 },
+  { name: "HATSU", price: 7500 },
   { name: "HIT DE CAJITA", price: 2500 },
-  { name: "HIT DE 500", price: 5000 },
 ]
 
 const cervezas = [
-  { name: "HEINEKEN", price: 5000 },
-  { name: "ANDINA", price: 5000 },
-  { name: "AGUILA", price: 5000 },
-  { name: "AGUILA LIGHT", price: 5000 },
-  { name: "CLUB COLOMBIA", price: 5000 },
-  { name: "POKER", price: 5000 },
-  { name: "CORONITA", price: 7000 },
+  { name: "AGUILA", price: 6500 },
+  { name: "POKER", price: 6500 },
+  { name: "CLUB COLOMBIA", price: 7500 },
+  { name: "BUDWEISER", price: 7000 },
+  { name: "HEINEKEN", price: 7500 },
+  { name: "CORONA", price: 10500 },
+  { name: "CORONITA", price: 8500 },
+  { name: "JP CHENET", price: 17000 },
 ]
 
 const jugos = [
@@ -125,15 +130,15 @@ const frappes = [
 ]
 
 const ceviches = [
-  { name: "COCTEL CAMARÓN", ing: "salsa rosada o salsa de tomate · cebolla · camarón", price: 30000, img: "https://images.unsplash.com/photo-1582482938214-d445a77aabf4?w=400&h=300&fit=crop" },
-  { name: "COCTEL GOURMET", ing: "salsa rosada o salsa de tomate · cebolla · camarón importado", price: 36000, img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" },
-  { name: "CEVICHE METRO PIZZA", ing: "salmón · camarón en reducción de maracuyá · cebolla · cilantro", price: 36000, img: "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?w=400&h=300&fit=crop" },
-  { name: "CEVICHE MIXTO", ing: "camarón · calamar · pulpo", price: 41000, img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop" },
+  { name: "MANGO BICHE", ing: "mango · zumo de limón · camarón", price: 38000, img: "https://images.unsplash.com/photo-1582482938214-d445a77aabf4?w=400&h=300&fit=crop" },
+  { name: "COCTEL CAMARÓN", ing: "salsa rosada o salsa de tomate · cebolla · camarón", price: 38000, img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" },
+  { name: "CEVICHE METRO PIZZA", ing: "salmón · camarón en reducción de maracuyá · cebolla · cilantro", price: 44000, img: "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?w=400&h=300&fit=crop" },
+  { name: "CEVICHE MIXTO", ing: "camarón · calamar · pulpo · langostino", price: 49000, img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop" },
 ]
 
 const platosAdicionales = [
-  { name: "PECHUGA AL LIMÓN", ing: "Pechuga de pollo con salsa de limón", price: 32000, img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=300&fit=crop" },
-  { name: "PECHUGA GRATINADA", ing: "Pechuga de pollo gratinada con queso", price: 38000, img: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=400&h=300&fit=crop" },
+  { name: "PECHUGA A LA PLANCHA", ing: "pechuga · papas a la francesa · ensalada", price: 38000, img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=300&fit=crop" },
+  { name: "SALCHIPAPA", ing: "salchicha ranchera · papas a la francesa · vegetales", price: 23000, img: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=400&h=300&fit=crop" },
 ]
 
 const menuInfantil = [
@@ -144,7 +149,7 @@ const menuInfantil = [
 const cazuelaMariscos = {
   name: "CAZUELA DE MARISCOS",
   ing: "Frutos del mar salteados y bañados en un bisque de mariscos y albahaca, pulpo, calamar, camarón, palmitos de cangrejo, mejillones y almejas, con un toque de brandy, acompañado de arroz, patacón o ensalada.",
-  price: 51000,
+  price: 56000,
   img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop"
 }
 
@@ -505,7 +510,7 @@ export default function MenuPage() {
                       </td>
                       {pizza.p.map((price, i) => (
                         <td key={i} className={`px-2 py-3 text-center font-bold text-[#111] text-sm ${i === 4 ? 'border-l-2 border-[#228b22]/20' : ''}`}>
-                          {formatPrice(price * 1000)}
+                          {price === 0 ? <span className="text-[#999]">—</span> : formatPrice(price * 1000)}
                         </td>
                       ))}
                     </motion.tr>
