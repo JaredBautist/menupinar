@@ -14,8 +14,7 @@ import {
   Star,
   Home,
   Menu,
-  ChevronUp,
-  Phone
+  ChevronUp
 } from "lucide-react"
 
 // Data
@@ -1037,11 +1036,11 @@ export default function MenuPage() {
           viewport={{ once: true }}
         >
           <motion.span
-            className="text-[#f5c800] font-bold"
+            className="text-[#228b22] font-bold"
             animate={{ opacity: [0.5, 1, 0.5] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            Metro Pizza Gourmet
+            Metro Pizza Premium
           </motion.span>
           <span className="mx-2">·</span>
           <span>@Metropizza.col</span>
@@ -1190,21 +1189,6 @@ export default function MenuPage() {
                   </motion.div>
                 )}
 
-                {/* CTA Button */}
-                <motion.a
-                  href="https://wa.me/573001234567?text=Hola!%20Quiero%20ordenar%20"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 flex items-center justify-center gap-2 bg-[#228b22] text-white py-3 rounded-xl font-oswald font-bold uppercase tracking-wider shadow-lg"
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.25 }}
-                  whileHover={{ scale: 1.02, backgroundColor: "#1a6b1a" }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Phone className="w-5 h-5" />
-                  Ordenar Ahora
-                </motion.a>
               </div>
             </motion.div>
           </motion.div>
