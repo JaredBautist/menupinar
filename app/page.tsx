@@ -698,12 +698,12 @@ export default function MenuPage() {
                 <thead>
                   <tr className="bg-[#228b22] text-white">
                     <th className="text-left px-4 py-3 font-oswald font-semibold tracking-wide uppercase rounded-tl-xl">Pizza</th>
-                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Personal</th>
-                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Pequeña</th>
-                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Mediana</th>
-                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Grande</th>
-                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase border-l-2 border-white/20">½ Metro</th>
-                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase rounded-tr-xl">1 Metro</th>
+                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Personal (6 porciones)</th>
+                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Pequeña (10 porciones)</th>
+                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Mediana (12 porciones)</th>
+                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase">Grande (16 porciones)</th>
+                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase border-l-2 border-white/20">½ Metro (12 porciones)</th>
+                    <th className="px-2 py-3 font-oswald font-semibold text-xs tracking-wide uppercase rounded-tr-xl">1 Metro (24 porciones)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1467,7 +1467,14 @@ export default function MenuPage() {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}
                   >
-                    {['Personal', 'Pequeña', 'Mediana', 'Grande', '½ Metro', '1 Metro'].map((size, i) => (
+                    {[
+                      'Personal (6 porciones)',
+                      'Pequeña (10 porciones)',
+                      'Mediana (12 porciones)',
+                      'Grande (16 porciones)',
+                      '½ Metro (12 porciones)',
+                      '1 Metro (24 porciones)',
+                    ].map((size, i) => (
                       <motion.div
                         key={size}
                         className="bg-[#f8f6f1] rounded-xl p-3 text-center hover:bg-[#228b22]/10 transition-colors"
